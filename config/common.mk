@@ -51,6 +51,14 @@ PRODUCT_COPY_FILES += \
 # Init script file with omni extras
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/init.local.rc:root/init.omni.rc
+    
+# Supersu support
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/common/apk/Superuser.apk:system/app/Superuser.apk \
+    vendor/omni/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/omni/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
+    vendor/omni/prebuilt/common/bin/99-supersu.sh:system/addon.d/99-supersu.sh \
+    vendor/omni/prebuilt/common/xbin/su:system/xbin/su
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
