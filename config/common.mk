@@ -9,6 +9,10 @@ PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bootanimation/lowfps-bootanimation.zip:system/media/bootanimation.zip
 endif
 
+# Other packages   
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/apk/PowerBattery.apk:system/priv-app/PowerBattery.apk \
+	
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
