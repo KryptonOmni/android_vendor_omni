@@ -12,6 +12,7 @@ endif
 # Other packages   
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/apk/PowerBattery.apk:system/priv-app/PowerBattery.apk \
+    vendor/omni/prebuilt/apk/KernelTweaker.apk:system/priv-app/KernelTweaker.apk
 	
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
