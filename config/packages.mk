@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     MonthCalendarWidget \
+    CMFileManager \
     OpenDelta \
     OmniSwitch
 
