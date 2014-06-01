@@ -75,8 +75,17 @@ PRODUCT_COPY_FILES += \
 # Versioning
 -include vendor/omni/config/version.mk
 
-#Theme Engine
+# Theme Engine
 -include vendor/omni/config/themes_common.mk
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+
+# Add Viper4Android
+# Supersu support
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/Viper4Android/app/Viper4Android.apk:system/app/Viper4Android.apk \
+    vendor/omni/prebuilt/Viper4Android/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/omni/prebuilt/Viper4Android/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    vendor/omni/prebuilt/Viper4Android/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/omni/prebuilt/Viper4Android/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
