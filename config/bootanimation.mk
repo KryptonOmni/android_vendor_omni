@@ -23,5 +23,5 @@ ifeq (omni_hammerhead,$(TARGET_PRODUCT))
 endif
 ifneq ($(filter omni_grouper omni_tilapia,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/omni/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
+        vendor/omni/prebuilt/bootanimation/1280x800.zip:system/media/bootanimation.zip
 endif
