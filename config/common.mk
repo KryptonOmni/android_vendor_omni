@@ -1,13 +1,7 @@
 PRODUCT_BRAND ?= omni
 
 # bootanimation (Some devices cant go over 100fps for a bootani)
-ifneq ($(USE_LOWFPS_BOOTANI),true)
-PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-else
-PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/bootanimation/lowfps-bootanimation.zip:system/media/bootanimation.zip
-endif
+-include vendor/omni/config/bootanimation.mk
 
 # Other packages   
 PRODUCT_COPY_FILES += \
