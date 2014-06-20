@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     MonthCalendarWidget \
     CMFileManager \
+    CMWallpapers \
     OpenDelta \
     OmniSwitch
 
